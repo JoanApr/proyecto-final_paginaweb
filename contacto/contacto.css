@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #555;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+/* Las imágenes */
+.carousel-container {
+    flex: 3;
+    max-width: 800px;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel img {
+    width: 100%;
+    display: none;
+}
+.carousel img.active {
+    display: block;
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-controls span {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+}
+aside {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    max-width: 300px;
+}
+/*footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer .logo img {
+    width: 50px;
+    height: auto;
+}
+.footer .social-icons {
+    margin-top: 10px;
+}
+.footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer .social-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+
+/* Contenido de la sección */
+.content-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+.content-section h2 {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-flex .text {
+    flex: 1;
+    padding: 1rem;
+}
+.content-flex .image {
+    flex: 1;
+    padding: 1rem;
+    text-align: right;
+    
+}
+.content-flex .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CSS personalizado para noticias */
+#news {
+    width: 100%; /* Ancho completo */
+    max-width: 1200px; /* Ajusta el tamaño máximo según tus necesidades */
+    margin: auto; /* Centrar */
+    border-radius: 10px;
+}
+
+.card {
+    margin: 4rem; /* Espaciado entre tarjetas */
+    border: 1px black;
+    border-radius: 10px;
+}
+
+/* CSS personalizado para proyectos */
+#projects {
+    width: 100%; /* Ancho completo */
+    max-width: 1200px; /* Ajusta el tamaño máximo según tus necesidades */
+    margin: auto; /* Centrar */
+    border-radius: 10px;
+}
+/*formulario*/
+/* Este CSS es para estilizar el formulario de contacto en la página web */
+
+/* Establece la estructura del formulario de contacto */
+#contact .background {
+    display: flex;
+    min-height: 100vh; /* Garantiza que el formulario cubra al menos toda la altura de la ventana */
+}
+
+#contact .container {
+    flex: 0 1 700px; /* Establece el ancho máximo del formulario */
+    margin: auto; /* Centra el formulario horizontalmente en la página */
+    padding: 10px; /* Añade un espacio alrededor del formulario */
+}
+
+#contact .screen {
+    position: relative; /* Establece la posición relativa para los elementos dentro del formulario */
+    background: #3e3e3e; /* Establece el color de fondo del formulario */
+    border-radius: 15px; /* Añade esquinas redondeadas al formulario */
+}
+
+#contact .screen-body {
+    display: flex; /* Hace que los elementos del cuerpo del formulario se muestren en línea */
+}
+
+#contact .screen-body-item {
+    flex: 1; /* Permite que los elementos del cuerpo del formulario se expandan para ocupar el espacio disponible */
+    padding: 50px; /* Añade un espacio alrededor de los elementos del cuerpo del formulario */
+}
+
+#contact .screen-body-item.left {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos del cuerpo del formulario en una columna */
+}
+
+#contact .app-title {
+    display: flex;
+    flex-direction: column; /* Coloca el título del formulario en una columna */
+    position: relative;
+    color: #ea1d6f; /* Establece el color del texto del título */
+    font-size: 26px; /* Establece el tamaño del texto del título */
+}
+
+#contact .app-contact {
+    margin-top: auto; /* Mueve la información de contacto hacia la parte inferior del formulario */
+    font-size: 14px; /* Establece el tamaño del texto de la información de contacto */
+    color: #888; /* Establece el color del texto de la información de contacto */
+}
+
+#contact .app-form-group {
+    margin-bottom: 15px; /* Añade un espacio entre los grupos de elementos del formulario */
+}
+
+#contact .app-form-control {
+    width: 100%; /* Establece el ancho completo para los campos de entrada del formulario */
+    padding: 10px 0; /* Añade un espacio interior alrededor de los campos de entrada */
+    background: none; /* Elimina el fondo de los campos de entrada */
+    border: none; /* Elimina el borde de los campos de entrada */
+    border-bottom: 1px solid #666; /* Añade un borde inferior a los campos de entrada */
+    color: #ddd; /* Establece el color del texto de los campos de entrada */
+    font-size: 14px; /* Establece el tamaño del texto de los campos de entrada */
+    text-transform: uppercase; /* Convierte el texto de los campos de entrada en mayúsculas */
+    outline: none; /* Elimina el contorno alrededor de los campos de entrada */
+    transition: border-color .2s; /* Agrega una transición suave al color del borde */
+}
+
+#contact .app-form-control::placeholder {
+    color: #666; /* Establece el color del texto de marcador de posición de los campos de entrada */
+}
+
+#contact .app-form-control:focus {
+    border-bottom-color: #ddd; /* Cambia el color del borde inferior cuando el campo de entrada está enfocado */
+}
+
+#contact .app-form-button {
+    background: none; /* Elimina el fondo del botón */
+    border: none; /* Elimina el borde del botón */
+    color: #ea1d6f; /* Establece el color del texto del botón */
+    font-size: 14px; /* Establece el tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    outline: none; /* Elimina el contorno alrededor del botón */
+}
+
+#contact .app-form-button:hover {
+    color: #b9134f; /* Cambia el color del texto del botón al pasar el cursor sobre él */
+}
